@@ -1,3 +1,4 @@
+/* Hero Home */
 .HeroHome-wrapper {
     height: 60vh;
     width: auto;
@@ -8,6 +9,7 @@
     background-color: #FFF;
 }
 
+/* Hero Home Pets */
 .Pets-wrapper {
     width: auto;
     padding: 20px;
@@ -72,4 +74,23 @@
 .Pet-element:nth-child(5) {
     grid-area: fifth;
     background-image: url('https://av.sc.com/sg/content/images/sg-pet-owner-article-masthead-1800x564.jpg');
+}
+
+/* Hero Cats */
+.HeroCats-wrapper {
+    height: 60vh;
+    width: auto;
+    background-image: url("https://www.krisinformation.se/globalassets/detta-kan-handa/hemberedskap/johner_linda-pauline_arousell_sca30486.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.HeroCats-wrapper p {
+    font-size: 3rem;
+    color: #FFF;
+    margin: 0 auto;
 }

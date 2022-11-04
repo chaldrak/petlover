@@ -1,0 +1,24 @@
+.Footer-wrapper {
+    background-color: #662799;
+    height: 20vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+    color: #CCC;
+}
+
+.Footer-sns ul {
+    list-style-type: none;
+}
+
+.Footer-sns a {
+    text-decoration: none;
+    color: #CCC;
+}
+
+.Footer-sns a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
