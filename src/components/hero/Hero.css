@@ -1,0 +1,75 @@
+.HeroHome-wrapper {
+    height: 60vh;
+    width: auto;
+    background-image: url("../../assets/868-8686204_pet-rules-cute-pets-together.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #FFF;
+}
+
+.Pets-wrapper {
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.Pets-text {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.Pets-text h1 {
+    font-size: 2.5rem;
+    color: #662799;
+}
+
+.Pets-container {
+    display: grid;
+    grid-template-areas: 
+        "first first second"
+        "third third second"
+        "fourth fifth fifth"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.Pet-element {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0 0 5px #000;
+}
+
+.Pet-element:nth-child(1) {
+    grid-area: first;
+    background-image: url('https://grandvalleyvet.com/wp-content/uploads/2016/10/GVAH-Blog-Header1.jpg');
+}
+
+.Pet-element:nth-child(2) {
+    grid-area: second;
+    background-image: url('https://www.lonetreevet.com/blog/wp-content/uploads/2017/02/LoneTree_iStock-106396236.jpg');
+}
+
+.Pet-element:nth-child(3) {
+    grid-area: third;
+    background-image: url('https://cityofgp.com/sites/default/files/styles/inner_banner/public/2022-01/animals-pets-banner.jpg?itok=46ObneDJ');
+}
+
+.Pet-element:nth-child(4) {
+    grid-area: fourth;
+    background-image: url('https://inspection.gc.ca/DAM/DAM-animals-animaux/STAGING/images-images/bringing_animals_to_canada_banner_facebook_1656079036158_eng.jpg');
+}
+
+.Pet-element:nth-child(5) {
+    grid-area: fifth;
+    background-image: url('https://av.sc.com/sg/content/images/sg-pet-owner-article-masthead-1800x564.jpg');
+}

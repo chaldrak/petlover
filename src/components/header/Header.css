@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+.Header-wrapper {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #662799;
+}
+
+.Header-container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.Header-menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.Header-menu-link {
+    text-decoration: none;
+    color: #AAA;
+    cursor: pointer;
+}
+
+.Header-menu-link::after {
+    content: "";
+    background-color: red;
+    width: 0;
+    height: 0.2rem;
+    display: block;
+    margin-top: 2px;
+    transition: 0.3s ease-out;
+}
+
+.Header-menu-link:hover::after {
+    width: 100%;
+}
+
+.Header-menu-link:hover {
+    color: #fff;
+}
+
+.active {
+    color: #fff;
+}
+
+.Loader-wrapper {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #662799;
+    font-size: 3rem;
+    font-family: 'Island Moments', cursive;
+}
+
+.Loader-wrapper p {
+    padding-left: 10%;
+}
