@@ -4,10 +4,10 @@ import './index.css'
 import App from "../components/app/App"
 import Header from "../components/header/Header"
 import Loader from '../components/header/Loader'
-import Home from '../pages/Home';
+import Home from '../pages/HomePage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from '../components/footer/Footer'
-import Cats from '../pages/Cats'
+import Cats from '../pages/CatsPage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

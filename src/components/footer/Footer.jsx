@@ -35,7 +35,7 @@ export default class Footer extends Component {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/chaldrak-dokpa-a9b59621a/">
                                 <BsLinkedin />
                             </a>
                         </li>

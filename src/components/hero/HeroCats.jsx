@@ -1,4 +1,5 @@
 import { Component } from "react";
+import TypewriterComponent from "typewriter-effect";
 
 export default class HeroHome extends Component {
     constructor(props) {
@@ -8,7 +9,22 @@ export default class HeroHome extends Component {
     render() {
         return (
             <div className="HeroCats-wrapper">
-                <p>Cats</p>
+                <p>
+                    <TypewriterComponent
+                        className="Home-text"
+                        onInit={(typewriter) => {
+                            typewriter
+                            .typeString('Cats')
+                            .pauseFor(2500)
+                            .deleteAll()
+                            .typeString('Cats')
+                            .pauseFor(2500)
+                            .deleteAll()
+                            .start();
+                        }}
+                        options={{loop: true}}
+                    />
+                </p>
             </div>
         )
     }
