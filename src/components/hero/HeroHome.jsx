@@ -7,9 +7,7 @@ export default class HeroHome extends Component {
 
     render() {
         return (
-            <div className="HeroHome-wrapper">
-                
-            </div>
+            <div className="HeroHome-wrapper" />
         )
     }
 }
