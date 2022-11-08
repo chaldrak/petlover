@@ -76,11 +76,45 @@
     background-image: url('https://av.sc.com/sg/content/images/sg-pet-owner-article-masthead-1800x564.jpg');
 }
 
+@media screen and (max-width: 480px) {
+    .Pets-wrapper {
+        padding: 10px;
+    }
+    
+    .Pets-text {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    
+    .Pets-text h1 {
+        font-size: 1.5rem;
+        color: #662799;
+    }
+    
+    .Pets-container {
+        display: grid;
+        grid-template-areas: 
+            "first"
+            "second"
+            "third"
+            "fourth"
+            "fifth"
+        ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
 /* Hero Cats */
 .HeroCats-wrapper {
     height: 60vh;
     width: auto;
-    background-image: url("https://www.krisinformation.se/globalassets/detta-kan-handa/hemberedskap/johner_linda-pauline_arousell_sca30486.jpg");
+    background-image: url("../../assets/johner_linda-pauline_arousell_sca30486.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,4 +201,110 @@
 
 .Cat-button:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .Cats-wrapper {
+        width: auto;
+        padding: 0 5% 10% 5%;
+        text-align: center;
+        display: block;
+        align-items: center;
+    }
+    
+    .Cats-text {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .Cats-text h1 {
+        font-size: 1.5rem;
+        color: #662799;
+    }
+    
+    .Cats-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .Cat-element {
+        height: 250px;
+    }
+    
+    .Cat-info p {
+        font-size: 0.9rem;
+    }
+    
+    .Cat-button {
+        color: #662799;
+        text-decoration: none;
+    }
+    
+    .Cat-image:hover {
+        background-position: 50%;
+    }
+    
+    .Cat-element:hover {
+        box-shadow: 0 0 10px #662799;
+        transition: 500ms ease;
+        padding: 10px;
+        height: 230px
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .Cats-wrapper {
+        width: auto;
+        padding: 0 5% 10% 5%;
+        text-align: center;
+        display: block;
+        align-items: center;
+    }
+    
+    .Cats-text {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .Cats-text h1 {
+        font-size: 1.5rem;
+        color: #662799;
+    }
+    
+    .Cats-container {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .Cat-element {
+        height: 250px;
+    }
+    
+    .Cat-info p {
+        font-size: 0.9rem;
+    }
+    
+    .Cat-button {
+        color: #662799;
+        text-decoration: none;
+    }
+    
+    .Cat-image:hover {
+        background-position: 50%;
+    }
+    
+    .Cat-element:hover {
+        box-shadow: 0 0 10px #662799;
+        transition: 500ms ease;
+        padding: 10px;
+        height: 230px
+    }
 }
