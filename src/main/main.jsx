@@ -9,6 +9,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from '../components/footer/Footer'
 import Cats from '../pages/CatsPage'
 import CatsDetailsPage from '../pages/CatsDetailsPage'
+import DogsPage from '../pages/DogsPage'
+import RabbitsPage from '../pages/RabbitsPage'
+import BirdsPage from '../pages/BirdsPage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,6 +22,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' element={<Home />} />
         <Route path='/cats' element={<Cats />} />
         <Route path="/cats/:id" element={<CatsDetailsPage />} />
+        <Route path="/dogs" element={<DogsPage />} />
+        <Route path="/rabbits" element={<RabbitsPage />} />
+        <Route path="/birds" element={<BirdsPage />} />
       </Routes>
       <Footer />
     </Router>
