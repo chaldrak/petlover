@@ -20,17 +20,17 @@ export default class Footer extends Component {
                 <div className="Footer-sns" style={{display: "flex", alignItems: "center"}}>
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="https://github.com/chaldrak">
                                 <BsGithub />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://web.facebook.com/chaldrak.charliecharmis">
                                 <BsFacebook />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://twitter.com/chaldrakus">
                                 <BsTwitter />
                             </a>
                         </li>
