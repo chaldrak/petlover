@@ -11,6 +11,7 @@ export default class Cats extends Component {
         super(props);
         this.state = {
             data: [],
+            isLoading: true
         }
     }
 
@@ -23,14 +24,20 @@ export default class Cats extends Component {
         .get(URL)
         .then((response) => {
             this.setState({
-                data: response.data
+                data: response.data,
+                isLoading: false
             })
         })
         .catch((error) => {
             console.log(error);
+            this.setState({
+                isLoading: false
+            })
         })
         .finally(() => {
-            console.log(this.state.data)
+            this.setState({
+                isLoading: false
+            })
         })
     }
 
@@ -48,11 +55,14 @@ export default class Cats extends Component {
                         Cats available for adoption near you
                     </h1>
                 </div>
-                <div className="Cats-container">
-                    { 
-                        cats.map((cat) => <Card key={cat?.id} cat={cat} />)  
-                    }
-                </div>
+                {
+                    this.state.isLoading ?
+                        <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca_w200.gif" alt="" />
+                            :
+                        <div className="Cats-container">
+                            { cats.map((cat) => <Card key={cat?.id} cat={cat} />) }
+                        </div>
+                }
             </div>
         )
     }

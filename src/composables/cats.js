@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://api.thecatapi.com/v1/breeds";
+export const URL = "https://api.thecatapi.com/v1/breeds";
 
 const getCats = () => {
     let data = [];
